@@ -1,0 +1,39 @@
+name: Trivy Scan
+on:
+  pull_request:
+    branches:
+      - master
+jobs:
+  trivy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout"
+        uses: "actions/checkout@v4"
+
+      - id: "auth"
+        uses: "google-github-actions/auth@v1"
+        with:
+          credentials_json: "${{ secrets.GH_ACTIONS_REPCORE_PROD_GCR_SERVICE_ACCOUNT_KEY }}"
+
+      - name: "Set up Cloud SDK"
+        uses: "google-github-actions/setup-gcloud@v1"
+
+      - name: "Use gcloud CLI"
+        run: "gcloud info"
+
+      - name: "Docker auth"
+        run: |-
+          gcloud auth configure-docker gcr.io --quiet
+          gcloud auth print-access-token | docker login -u oauth2accesstoken --password-stdin https://gcr.io
+
+      - name: "Pull Trivy image"
+        run: docker pull gcr.io/repcore-prod/vendasta-terraform-trivy:latest
+
+      # Run Trivy Secret Scan (Only)
+      - name: Trivy secret scan
+        run: |-
+          echo "### Running Trivy secret scan on workspace: ${{ github.workspace }}"
+          docker run --rm -v "${{ github.workspace }}":/workspace \
+            -w /workspace \
+            gcr.io/repcore-prod/vendasta-terraform-trivy:latest \
+            trivy fs --scanners secret --skip-files "gha-creds-*.json" --exit-code 1 .
