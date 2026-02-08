@@ -6,15 +6,14 @@ A comprehensive repository for managing agile workflows, RFCs (Request for Comme
 
 This repository serves as a centralized hub for agile process documentation, sprint planning, and workflow automation tools. It includes tools and templates for Jira and Confluence discovery, brainstorming sessions, and the creation of sprint epics, tasks, and assignees.
 
+**Important:** The workflows and processes in this repository require the use of the **Atlassian MCP Server** to interact with Jira and Confluence. Ensure you have the Atlassian MCP Server configured and authenticated before using the Cursor skills and automation tools.
+
 ## Who This Is For
 
 This repository is designed for:
 
-- **Product Managers** - Plan sprints, create epics, and manage product roadmaps
-- **Agile Practitioners** - Anyone utilizing sprint or agile processes at Vendasta
-- **Project Managers** - Coordinate cross-functional initiatives and track deliverables
-- **Engineering Teams** - Understand RFCs, sprint requirements, and technical specifications
-- **Stakeholders** - Review RFCs and understand proposed changes across the organization
+- **Product Managers (PMs)** - Plan sprints, create epics, and manage product roadmaps using agile processes
+- **Citizen Developers** - Non-technical team members who engage in the agile process and need tools to create sprints, RFCs, and manage workflows
 
 ## Repository Structure
 
@@ -39,10 +38,14 @@ Forms and templates for workflow automation processes.
 
 ## Getting Started
 
+**Prerequisites:** Ensure you have the Atlassian MCP Server configured and authenticated in your Cursor environment to interact with Jira and Confluence.
+
 1. Browse RFCs by functional group to understand proposed changes
 2. Review sprint documentation for current and upcoming sprints
-3. Use Cursor skills to automate sprint and RFC creation workflows
+3. Use Cursor skills with the Atlassian MCP Server to automate sprint and RFC creation workflows
 4. Reference workflow automation forms for standardized processes
+
+The Cursor skills in this repository utilize the Atlassian MCP Server to directly create and manage Jira issues, Confluence pages, sprints, and epics.
 
 ## Resources
 
