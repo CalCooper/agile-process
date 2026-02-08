@@ -1,0 +1,408 @@
+Email Address,Department Name,Your Name ,Current Citizen Developer you are working with (if applicable) ,Task or Workflow Name:,What is the desired outcome of the workflow? ,"Description:
+Briefly describe the current manual steps required to move information between systems or people to complete this task. We are looking for workflows where:
+People are the bridge: You are manually copying data from one tool (e.g., a meeting recording, Chat, or Email) into another (e.g., a CRM, Spreadsheet, or Project Tracker).
+Context is lost: Information is being handed off via chat or meetings rather than living in a system of record.
+Knowledge is hidden: The ""how-to"" lives in someone's head rather than in an AI-readable artifact.","Software used in the process (e.g. Google Sheets, GitHub, Confluence, etc)",Frequency,Total Estimated Team Hours Spent per Week (TEAM hours - if three people on your team or cross-functional teams - time should compound accordingly),"Current Knowledge Artifacts (The ""How-To"" Evidence):
+To automate a workflow, an AI needs to be able to ""see"" and ""reason over"" authoritative knowledge. Please indicate what documentation already exists for this task.","Impact Score: We need to prioritize ""AI Builds"" that move the needle for Vendasta’s overall operating model. When scoring, please consider the following three factors:
+1 - Minimal Improvement: Automating this would be ""nice to have,"" but the team can easily manage the manual work without hitting a bottleneck.
+3 - Moderate Improvement: This task is a persistent ""drag"" on productivity. Automating it would noticeably improve team morale and throughput.
+5 - Significant Improvement: This is a high-leverage ""human-glued"" process. Automating it would fundamentally change how your division operates and allow your team to shift from ""doing the work"" to designing the systems that do the work.","Scale Category: Task, Workflow, System ", How many annual hours will it save? ,COMMENTS,"Hours Scale 
+(0-500=1, 500-1000=2, 1000-1500=3, 1500-2000=4,  2000+= 5)",Direct Impact to the 4 Company Objectives (1 - 3) ,Name the Objective,Direct Impact to the 8 Quarterly Initatiives,Name the Initative,3. Does it move the needle on one of the 4 Company KPI’s?,Name the KPI,Does it impact Customer Satisfaction and/or reduce churn? ,Column 23,Column 24,Column 25,Column 26
+mhymers@vendasta.com,Finance & Admin,Mitch Hymers,,AR Collections,AR Collections work is completed by an AI employee for our various internal PIDs,Knowledge is hidden,"Premium reports, kixie, platform",Daily,20,"None / It's in people's heads: This flags a ""knowledge gap."" Before we can automate this, our first step will be to help you create a durable artifact so the knowledge isn't lost when people move roles., Some documentation exists, but we would have to improve it",5,Workflow,1040,,,,,,,,,,,,,
+masiddiqps@vendasta.com,Finance & Admin,Mohamed Abubacker Siddiq,NA,"Creation of bills, payments and entries in ERP",AI should be able to read PDF documents and create bills and payment in the system based on the inputs given,"The source starts from various PDFs -
+The manual process starts by understanding the bills received via pdf and creating the bill with appropriate dates, gl codes and amount. The key thing to note is on the tax calculation and booking them correctly in the ERP. After the bills are created, the team checks the bank statement and applies the payment against the bill. Sometimes they create JE for bank charges, booking interest and internal fund transfers
+
+Information used are primarily documents in PDF and application where entries are booked is NetSuite","NetSuite, Google sheets (occasional)",Weekly,5,"None / It's in people's heads: This flags a ""knowledge gap."" Before we can automate this, our first step will be to help you create a durable artifact so the knowledge isn't lost when people move roles.",4,Workflow,260,,,,,,,,,,,,,
+aeubanks@broadly.com,Finance & Admin,Annalie Eubanks,,,Have the system automatically cancel out accounts with 3 consecutive past due invoices. ,"Once a week we are manually going through the Direct PIDs and auditing accounts that have invoices that are over 90 days past due. We are then canceling out accounts if they have 3 consecutive invoices for that retail subscription past due. If we could have an automation that cancels out the products, the retail subscriptions, and then handle the invoices that are outstanding on the account. 
+
+We are only doing this once a week currently, due to the time it takes to manually go through and process all the accounts.",Google Sheets,Weekly,3.5,"I have a step-by-step guide, not sure if it is ""machine readable""",4,Task,182,,,,,,,,,,,,,
+emalik@vendasta.com,Finance & Admin,Emad Malik,,Structured extraction of commission relevant fields from contracts,"AI monitors contract state changes
+
+AI assembles a “commission-ready” data packet
+
+AI flags missing or conflicting data
+
+AI routes exceptions for human approval",I manually review contracts and product commitments to check whether bookings are first order or second order and how many years the contract covers. I then compare this information with Looker data and the sales team’s closed PIDs to run audits. This requires copying information between systems and relying on my own knowledge to interpret contract terms and resolve mismatches.,"Partner center, billing center, looker, and google sheet",Monthly,13,"We have a spreadsheet template: This provides the structured data format an AI would need to output., None / It's in people's heads: This flags a ""knowledge gap."" Before we can automate this, our first step will be to help you create a durable artifact so the knowledge isn't lost when people move roles.",5,Workflow,676,,,,,,,,,,,,,
+rdutchak@vendasta.com,Finance & Admin,Reilley Dutchak,,Sales contract administration,automate high volume manual tasks,"An employee must manually create and amend contracts for sales made using templates, amending them for non-standard contract terms. ",Google Sheets and Google Docs,Daily,35,"We have a Framework of SOP:  A written step-by-step guide is the best ""machine-readable"" foundation for an AI employee., We have a spreadsheet template: This provides the structured data format an AI would need to output.",5,Task,1820,,,,,,,,,,,,,
+rmorris@vendasta.com,Marketing,Rylan Morris,"None, but Lauretta and JZ have been nominated (and I hope they both get in!)",Rolling out new sales assets,"All sales teams are using new assets, and we receive both qualitative and quantitative insights on how they're working","After a sales asset has been created, it is then shared with our sales team via the Sales Enablement hub. From there, it takes countless meetings, reminders, and ongoing manual review to ensure that our reps are using the assets. There is little inspection happening today, and when it does occur, we usually see that our reps are not consistently using the new assets, and only then does feedback occur (the reps explain ""why"", but it's difficult to point to evidence of them trying to use it in the first place).","Confluence, gchat, gmeet, Vendasta's CRM (meeting analysis)",Weekly,6,"None / It's in people's heads: This flags a ""knowledge gap."" Before we can automate this, our first step will be to help you create a durable artifact so the knowledge isn't lost when people move roles., Part of the challenge is that there's unclear ownership and a definition of what this should ""look"" like. It's a bit of a wild west.",5,System,312,,,,,,,,,,,,,
+jneher@vendasta.com,Marketing,Jon Neher,,Marketing Business Review Deck Generation,"Every week, every month, Marketing and Sales pulls numbers from a variety of data sources to put into Slides and Docs so that other stakeholders can look at and discuss these numbers.
+
+If we could generate the Marketing Business Review deck monthly with accurate data for the last month, that would take out a bunch of monthly toil. The same pattern could be applied to other weekly meetings as well, likely with far simpler formats.","We'll gather data from Google Analytics, Looker, SEMRush, ahrefs, YouTube, different social platform, and so on. This information is then taken and made to ""fit"" on a Google Slide. ",,Monthly,8,"None / It's in people's heads: This flags a ""knowledge gap."" Before we can automate this, our first step will be to help you create a durable artifact so the knowledge isn't lost when people move roles.",3,Task,416,,,,,,,,,,,,,
+jzouak@vendasta.com,Marketing,Jehan Zouak,,Product Release Process,"Vendastians, partners, and (when applicable) SMBs know about, and are compelled and empowered to sell and/or use new features and products released by Vendasta. ","This process is too lengthy to outline here. The steps required to properly release even a minor update require significant communication and task completion. For large releases, the number of stakeholders involved, strategic and tactical efforts, and coordination involved is even greater. ","Confluence, Jira, Google Chat, Google Docs, Google Sheets, Partner Center, Business App, Canny, and often others for graphic design, video production, etc. ",Weekly,24960,"We have a Framework of SOP:  A written step-by-step guide is the best ""machine-readable"" foundation for an AI employee.",5,System,1297920,,,,,,,,,,,,,
+jast@vendasta.com,Marketing,Jillian Ast,,Update website metrics,"To consistently capture and review weekly and monthly website metrics so we can track performance trends, identify issues early, and make informed decisions to improve site effectiveness.","Website metrics are manually gathered from GA4 and copied into tables in documents or slide decks. This process is repeated separately for three different websites. Because the work relies on manual copy-and-paste, it is time-consuming and error-prone—metrics can be placed in the wrong fields if focus is interrupted or context is lost between systems. The process and logic for where each metric belongs lives primarily in individual knowledge rather than in a documented or systemized source of truth.
+
+After compiling the data, the metrics must be manually analyzed to determine trends, anomalies, and what may be driving changes in performance. While AI can be used to assist with analysis, it often lacks full historical, business, or site-specific context, which can lead to incomplete or less reliable insights. Much of the interpretation logic and context for the data lives in individual knowledge rather than in a centralized, system-of-record or AI-readable artifact.
+","Google Analytics, Google Sheets, Google Docs, Confluence, Matomo",Weekly,2,"We have a spreadsheet template: This provides the structured data format an AI would need to output., None / It's in people's heads: This flags a ""knowledge gap."" Before we can automate this, our first step will be to help you create a durable artifact so the knowledge isn't lost when people move roles.",5,Workflow,104,,,,,,,,,,,,,
+cgordeyko@vendasta.com,Marketing,Chris Gordeyko,n/a,Lifecycle Email Reporting,Improve reporting processes to have better visibility in success rate of campaigns and lead movement through the customer funnel; can properly use it to optimize. ,We are unable to properly report on email campaigns in the platform. My process is to take multiple weekly screenshots of the campaigns and have AI convert them into a downloadable csv. I then import them into a google sheet where I spot check them before analyzing. ,"Google sheets, Gemini",Weekly,2.5,"We have a spreadsheet template: This provides the structured data format an AI would need to output., Other process documentation can be extracted from Gemini and ChatGPT prompts",3,Workflow,130,,,,,,,,,,,,,
+swohlberg@vendasta.com,Marketing,Shayne Wohlberg,NA / Me,Marketing Operations Task Intake / Management,"AI watches for messages from people & in spaces -> Identifies what is a marketing operations related task -> if yes -> Create ticket in Jira
+
+Ideal State also includes AI reading back on previous messages and/or in the msg thread and add on additional context to existing tickets
+
+Super ideal state -> One AI identifying tasks for different teams & sending tickets to the correct team's Jira boards (dev, PMM, revops, marketing ops, etc.)","Context is lost & people are the bridge -> Most mkt ops requests come in via Gchat DM's or Space mentions, then one would have to copy & paste context into a new Jira ticket",https://flows.workspace.google.com/ -> Google sheets -> Jira,Daily,2,We have a spreadsheet template: This provides the structured data format an AI would need to output.,3,System,104,,,,,,,,,,,,,
+swohlberg@vendasta.com,Marketing,Shayne Wohlberg,Jon Neher / Me ,Update CRM Opportunies based on Transcript / Sales actions,"VMF CRM -> As sales people record actions in the CRM (call connected, meeting, etc.) update newest acquisition opportunity to appropriate stage.
+
+Ex. 
+- Sales calls or emails made -> Update opp to Sales accepted Lead
+- Call transcript includes mentions of a ""demo call"" being booked -> Update opp to SQL
+- Meeting transcript indicates initial demo -> Update to Demo Complete
+
+This is not a time consuming task for me, but I work in operations so my job is making other peoples jobs easier & improve sales efficiency :) ","People are the bridge: Sales reps do this manually for each demo, SAL data point is often lost as its manual and not immediately beneficial to reps",Vendasta AI,Daily,20,"Most of this data is avaliable in AI readable format, transcript exports have been a blocker",5,Task,1040,,,,,,,,,,,,,
+nbehiel@vendasta.com,Marketing,Nykea Behiel,/,Press Release to Multi-Channel Launch and Earned Media Impact / Reporting,"Ship a press announcement that:
+- Publishes once, then automatically populates every required channel (website, wire, social, internal, community, platform, email, sales enablement)
+- Routes the right outreach to the right journalists with the right tone
+- Eliminates manual reformatting, copy/paste, and link-rescheduling
+- Produces an exec-ready performance readout (earned, owned, traffic, search, social) with minimal manual analysis","This is currently coordinated through people acting as the integration layer across systemsm though we use AI at every step it's still not connected. .
+
+1) Create the announcement package
+- Draft release, then edit for brand voice, accuracy, legal sensitivity, and positioning
+- Manually create variations of the same narrative for:
+   - Corporate social posts
+   - LinkedIn thought leadership carousel copy
+   - Exec profile posts (multiple voices, different angles)
+   - Website PR post format
+   - Related blog post
+   - Product page updates (relevant sections, CTAs, internal links)
+   - Platform banner copy
+   - Facebook community post
+   - Email version (newsletter and/or customer email)
+   - Sales assets (talk track, email template, key bullets)
+   - Webinar and/or downloadable content description (when applicable)
+
+Where humans are the bridge:
+- The same “source” content gets rewritten and reformatted repeatedly for different channels and audiences.
+- Decision logic (what to say to whom, what gets emphasized) lives in my head and the team’s heads.
+
+2) Design and asset production coordination
+- Write design briefs and chase creative for multiple placements -- website banner, Social images, LinkedIn carousel, Platform ad/banner, Demand assets (if required), Press kit visuals...
+- Coordinate revisions and resizing per channel
+
+Where humans are the bridge:
+- Requests, approvals, and version control happen across chat threads and docs.
+- Final assets need to be manually downloaded, renamed, and uploaded into multiple systems.
+
+3) Distribution execution (wire + owned channels)
+- Decide wire provider based on budget/credits (Meltwater sometimes unavailable due to credits)
+- Compare distribution partners vs price, then purchase as needed
+- Schedule wire release
+- Publish the release on the website (PR page), then confirm URL structure and metadata
+- Schedule corporate social posts that link to the website release
+
+Key failure point:
+- Social scheduling tools flag the link as broken when the web release isn’t live yet, even though it is live at time of publish
+
+Result: manual rescheduling and re-linking later, plus re-checking every scheduled post
+
+4) Earned media outreach (embargo + live)
+- Build a target list from ~70 journalists/outlets
+- Segment by vertical and relevance
+- Write memorable, non-spammy outreach:
+- Embargo pitch (if applicable)
+- Live pitch follow-up
+- Adjust tone based on relationship strength and journalist preferences
+- Create/assemble a press kit package for embargo outreach (assets, links, boilerplate, executive quotes as needed, find correct company data, etc)
+- Copy/paste from drafts/LLM output into emails, then manually:
+- Personalize
+- Change subject lines
+- Add recipients
+- Track who got what version
+
+Where context is lost:
+- Relationship history and “what works” isn’t captured as structured, reusable intelligence.
+Who received what, and why, can end up scattered across email threads and notes. Don't know who opened / published last time, no context except through my memory
+
+5) Internal amplification and advocacy
+- Message leadership in chat to post
+- Post in multiple internal channels to encourage employee sharing
+- write the internal post to be engaging enough to earn adoption (NOT working very well atm...)
+- Attempt to track who shared and how many employees participated (employer brand signal is hard to measure)
+
+Where humans are the bridge:
+- Internal comms and adoption tracking live in chat and manual spot-checking.
+- No clean system of record for employee advocacy participation tied to the release.
+
+6) Performance measurement and reporting
+- Earned: check Meltwater for mentions and pickup quality
+- Owned web: check Google Analytics for traffic to the release and related pages
+- Search: check Google Search Console for branded search movement and related queries
+- Social: check corporate account performance across platforms
+- Employee amplification: limited visibility into individual post performance and adoption counts
+- Compile results into slides for different audiences
+- Reframe the story depending on who it’s going to (Exec, Marketing, Product, Sales, All Hands)
+
+Where humans are the bridge:
+- Data is pulled manually from multiple sources, then stitched together into a narrative.
+- Reporting is repeated for different stakeholders, with no automated “single source of truth.”","Meltwater (wire distribution + earned media monitoring)
+Email (journalist outreach, internal comms)
+Chat (leadership requests, internal amplification, cross-functional coordination)
+Vendasta Platform (social posts, website updates...)
+Vendasta.com (press release page, blog, product page updates, internal links, banner updates)
+LinkedIn, Facebook (corporate channels, community posts, exec profiles)
+Google Analytics (web traffic)
+Google Search Console (branded search, query impact)
+Google Slides (performance reporting decks)
+LLM tools (drafting and variants)
+Design tools/workflow (briefing, asset creation, resizing, approvals)
+Google Sheets
+Google Docs
+Other wire provider, when necessary
+Google Calendar (scheduling press interviews when possible)
+",Per Transaction,15,"We have a spreadsheet template: This provides the structured data format an AI would need to output., None / It's in people's heads: This flags a ""knowledge gap."" Before we can automate this, our first step will be to help you create a durable artifact so the knowledge isn't lost when people move roles., There are various pieces, but not everything. Example I have an AI list template with press contacts, but it doesn’t have the context of who responded last time, etc, unless I manually update. Prior releases used as informal templates, a GPT as a comms / PR pro, scattered checklists and notes across docs/chat, saved prompts for creating leadership posts, etc. No single AI-readable SOP that covers the full end-to-end workflow, decision logic, and channel-specific outputs",4,System,780,,,,,,,,,,,,,
+nbehiel@vendasta.com,Marketing,Nykea Behiel,/,Exec LinkedIn Thought Leadership,"A repeatable system that turns exec expertise into high-quality LinkedIn content that:
+- Sounds like the exec, not marketing
+- Ships consistently with low lift from leadership
+- Uses real proof points (customer stories, sales feedback, internal and external data)
+- Drives measurable engagement and keeps the exec active in comments quickly
+- Creates a feedback loop so we get smarter every week
+- Makes exec / Vendasta look like real thought leaders, not like they're just publishing AI content","Note that we are just starting this process because it is so time-consuming. We write posts somewhat ad hoc for Brendan and Sanjay, but are looking to expand that into strategic content for a few more execs. 
+
+1) Capture real exec POV (source material)
+- Schedule and run an on-camera interview with the exec to pull:
+   - Opinions, frameworks, contrarian takes
+   - Stories and examples
+   - Language they naturally use
+- Summarize and extract usable angles
+
+Where people are the bridge:
+- The “voice” lives in the exec’s head and a video file. It’s not structured into reusable content inputs.
+
+2) Add proof points and references
+- Manually hunt for supporting material from:
+   - Customer stories and anecdotes
+   - Sales feedback and frontline insights
+   - Google Chat threads and internal updates
+   - Internal performance data (when available)
+   - External data (industry reports, benchmarks, news)
+- Validate what can be shared publicly
+
+Where context is lost:
+- References are scattered across systems and people. The “why this matters” evidence is hard to retrieve on demand.
+
+3) Create content variations
+- Write multiple formats from the same core idea:
+   - Text post
+   - Short video cutdowns
+   - Carousel outline and copy
+   -Adapt framing based on audience and exec personality
+
+Where knowledge is hidden:
+- What “works” for each exec (tone, length, topics) is learned by trial and error and stored only on their linkedin backend
+
+4) Approval and publishing
+- Send drafts for approval, incorporate edits, re-route for final sign-off
+- Coordinate posting. Exec posts themselves or we post via our platform
+ - If we spot an error after posting:
+   - We can’t reliably correct it quickly (limited ability to edit)
+   - We can’t log in to engage as them
+
+Key operational gap:
+- Posting and engagement timing can’t be guaranteed, yet LinkedIn rewards fast interaction.
+
+5) Engagement and follow-through
+- Try to get the exec to respond to comments quickly
+- We can’t interact from their accounts to sustain momentum
+- We can’t consistently manage “comment strategy” (who to respond to, what to say, when)
+
+Where people are the bridge:
+- Engagement is dependent on exec availability, not a system.
+
+6) Measurement and learning
+- Results are mostly a black hole
+   - Limited visibility beyond reactions and comments we can see
+   - No clean access to deeper analytics across exec profiles
+- Manually infer what worked and adjust next drafts
+
+Where the loop breaks:
+Without reliable performance data, we can’t build a repeatable, improving system.","LinkedIn (exec profiles)
+Video recording tool (interviews)
+Google Chat (reference material, internal context)
+Docs/notes (drafting and approvals)
+Internal data sources (varies)
+External data sources (varies)
+Vendasta platform (when used for posting)
+Basic LinkedIn visible metrics (reactions/comments)
+Looker (data)
+External research
+Customized GPT 
+Vendasta website (when applicable blog / lead magnet applies) ",Weekly,15,"None / It's in people's heads: This flags a ""knowledge gap."" Before we can automate this, our first step will be to help you create a durable artifact so the knowledge isn't lost when people move roles.",3,Workflow,780,,,,,,,,,,,,,
+jparchewsky@vendasta.com,People Operations,Jean Parchewsky,Cal Cooper or Emma Mitchell ,"Internal hiring for vacancies: Finding internal skills, experiences and competencies so we can leverage Talent Density and our internal team vs hiring external. ","I believe that we will move to more and more wanting to find people to work on a project or company initiative vs fill a role. It may be a 6 month term vs a new permanent job. The desired outcome is that we would have a deep data base and knowledge on who are team is today, what companies they worked at previously and what experiences they have that could add value to the initiative. We would quickly be able to input the job scope and needs, and the output would give us some people we have today that would be good at being on that team. I think even more then improving our time, this would aid in retention of key people- instead of going elsewhere to learn or leverage their skills they would move from one project to the next and bring high impact. This would also reduce our need to externally hire, Imagine someone who has worked on 4 different projects this year, with different key stakeholders - they value and insight they have into our operations would be way more then if they stayed in the same role.  ","Currently today we build the job description (we use an AI agent for this) then we post it internally and hope someone who may have the skills sees it, we also may shoulder tap managers to see if they know of anyone. The internal applicant applies through a form, they get interviewed for the role and may get selected. Meanwhile there may be other internal applicants who did not see the post or who may be more qualified. We would have to search Linkedin or Bamboo person by person to try and find the skills or do a Linkedin Search for Vendasta employees to see who may have the skill. ","Google Sheets, Bamboo, Google Forms, Linkedin ",Weekly,3,"We have a Framework of SOP:  A written step-by-step guide is the best ""machine-readable"" foundation for an AI employee., We have a spreadsheet template: This provides the structured data format an AI would need to output.",4,System,156,,,,,,,,,,,,,
+ncooke@vendasta.com,People Operations,Natasha Cooke,None,,,"1. Blocking interviews on Google Calendar
+2. Creating Job Postings after job description approval
+3. Creating Interview Guides manually every time. Chat GPT does the work but wha if we had a system that broke down each step and gave us a solution
+4. Using Gemini to provide cleaned up transcripts and automatic scoring rubrics based on our templates
+5. Resume parsing
+6. Skills builder on ATS that can auto screen internal and external candidates and share most suited candidates for the role
+7. Automating Global Hiring Lifeline to create one dashboard to show us a recruitment summary and dashboard","Google Sheets, Bamboo, Calendar",Daily,40,"We have a Framework of SOP:  A written step-by-step guide is the best ""machine-readable"" foundation for an AI employee., We have a spreadsheet template: This provides the structured data format an AI would need to output.",4,System,2080,,,,,,,,,,,,,
+leelap@vendasta.com,People Operations,Leela Princy,NA,Automated Resume Screening & Shortlisting Workflow,"To automatically screen incoming resumes against role requirements, shortlist qualified candidates, flag mismatches, and generate a structured candidate summary so recruiters can focus on interviews and engagement instead of manual resume review.","Today, recruiters manually review a high volume of resumes from multiple sources (BambooHR, Naukri, LinkedIn, referrals). For each resume, we check role fit, notice period, salary expectations, location, experience, and key skills. We then manually update the tracker/ATS, tag candidates, send screening emails, and share shortlists with hiring managers.
+
+This is time-consuming and repetitive, and the process varies by recruiter. It also leads to delays in shortlisting and slower pipeline movement—especially when multiple requisitions are open at the same time.
+
+Key manual steps include:
+
+- Downloading and reviewing resumes one by one
+- Matching skills/experience against the JD
+- Sorting resumes into “shortlist / maybe / reject” buckets
+- Writing candidate summaries for hiring managers
+- Updating ATS / Google tracker manually
+- Sending screening calls / next-step communication manually","BambooHR / ATS, Google Sheets (RFR tracker), Naukri, LinkedIn",Daily,13,"We have a Framework of SOP:  A written step-by-step guide is the best ""machine-readable"" foundation for an AI employee., We have a Loom video: This helps us map ""workflow intelligence"" by seeing exactly how a human currently bridges systems.",5,Workflow,676,,,,,,,,,,,,,
+calistacooper@vendasta.com,People Operations,Cal Cooper,Haley Serrano ,Product Release & Documentation Pipeline ,"Make it platform updates are consistently, accurately, and efficiently translated into customer-facing documentation, internal release notes, and external product updates (changelog) using a single source of truth (github repos), with AI performing synthesis and humans acting only as reviewers and governors.
+
+This would reduce time across teams by covering varied outputs including:
+Product Managers (release notes)
+Engineers (one-off questions)
+Product Marketing (changelog posts)
+Knowledge Manager (product documentation)","People are the bridge:
+Platform changes originate in engineering repos, but humans manually identify them through the release notes tables, or internal meetings. Product Managers, Knowledge Managers, and Product Marketing then rewrite (AI-assistant but siloed) and redistribute this information across Confluence, product documentation, roadmap and changelogs, and G chat announcements.","GitHub (production repos)
+GitHub (documentation repos)
+Google Chat (ad hoc communication)
+Google Meet (sprint reviews)
+Confluence (strategy, release tables)
+JIRA (project tracker notes and stories)
+Changelog roadmap (unknown)",Weekly,15,"We have a Framework of SOP:  A written step-by-step guide is the best ""machine-readable"" foundation for an AI employee.",5,System,780,,,,,,,,,,,,,
+calistacooper@vendasta.com,People Operations,Cal Cooper,Cal Cooper and Emma Mitchell,"AI Project Intake, Classification, and Routing Pipeline","To ensure that every AI-related project request entering Vendasta is:
+
+- Classified consistently by scope (Crawl / Walk / Run)
+- Screened for AI-readiness and knowledge maturity
+- Screened for risk, sensitivity, and compliance requirements
+- Automatically routed into the correct execution lane / jira backlog for DIY / cit devs or for extra review","Context is lost:
+Critical details about scope, intent, readiness, or risk are often clarified verbally or through back-and-forth chat. Decisions about why something was routed (or delayed) are not yet captured in a pipeline / system.
+
+Knowledge is hidden:
+Many requests depend on undocumented processes, outdated SOPs, or “how we usually do it” knowledge. This results in:
+
+Rework during build:
+Slow processs with too many 'hands' 
+Delays while knowledge is clarified
+Risk being discovered late in the process
+Inconsistent ""acceptance"" standards","Current State (Manual):
+
+Google Forms (intake) - manual routing and classification based on scope, knowledge and data risks
+Google Chat / Meetings (ad hoc intake across channels like the cit dev request one and clarification / scope Q&A)
+Jira (manually created tickets) for projects to enter any backlog or process at all
+Confluence / Google Docs (SOPs, partial documentation) - RFCs or required scope documentation
+Human judgment for routing and prioritization",Weekly,8,"We have a Framework of SOP:  A written step-by-step guide is the best ""machine-readable"" foundation for an AI employee., None / It's in people's heads: This flags a ""knowledge gap."" Before we can automate this, our first step will be to help you create a durable artifact so the knowledge isn't lost when people move roles., https://vendasta.jira.com/wiki/spaces/LD/pages/3780771855/Automate+a+Structured+AI+Project+Routing+Pipeline ",3,Workflow,416,,,,,,,,,,,,,
+gmiller@vendasta.com,People Operations,Gwynneth Miller,,Recruitment- Hiring Kick off,Automate the RFR & Hiring Kick off/Approval stages of the recruitment process ,"Manual process. 
+Manager submits RFR to google form. People ops moves it over and populates in GHL. People Ops books hiring kick off meeting to get more information. Uses transcript and GPT to populate information. ","Google form, Google Sheet, Bamboo ",Daily,25,"We have a Framework of SOP:  A written step-by-step guide is the best ""machine-readable"" foundation for an AI employee.",5,Workflow,1300,,,,,,,,,,,,,
+gtsoi@vendasta.com,Product,Gabriel Tsoi,,Updating roadmaps and OKRs,"Currently, we have JIRA product matrix, epics in product backlog, external facing roadmap slides, a way to communicate the roadmap internally as well as the OKRs that need to be kept up to date in Lattice.
+
+Ideally, we can consolidate the updates into a single place.","1. Linking confluence document into updates in Lattice and JIRA product matrix
+2. Copying epic descriptions to JIRA product matrix cards
+3. Linking chat links or copying emails screenshots to JIRA product matrix
+4. Updating the roadmap slides on google manually based on the JIRA product matrix cards
+5. Copy and pasting the lattice OKRs into google slides","Confluence, JIRA, Lattice, Google Chat, Gmail, Google slide",Weekly,2,"None / It's in people's heads: This flags a ""knowledge gap."" Before we can automate this, our first step will be to help you create a durable artifact so the knowledge isn't lost when people move roles.",2,Workflow,104,,,,,,,,,,,,,
+gtsoi@vendasta.com,Product,Gabriel Tsoi,,Writing release note and publishing support articles,"A way to generate the release note as well as the support documents on docusarus will be generated as draft based on the JIRA product matrix card contents, which contains all the contexts about developments, and discovery.","Writing the release note from scratch. And then copy and paste the release note into AI to generate a mark-down version. Download the screenshots, and upload that to the Docusarus repo. Edit the mark down version in the repo, and draft a PR. ","Confluence, Github, Cursor",Monthly,3,"None / It's in people's heads: This flags a ""knowledge gap."" Before we can automate this, our first step will be to help you create a durable artifact so the knowledge isn't lost when people move roles.",3,Workflow,156,,,,,,,,,,,,,
+gtsoi@vendasta.com,Product,Gabriel Tsoi,,Screening applicants,"Connect with BambooHR and ranking the applicants based on the profile matching against the job description based on the criteria generated, and flag for strength and gaps to look out for. ",Reviewing the resume one by one in details,BambooHR,Per Transaction,4,"None / It's in people's heads: This flags a ""knowledge gap."" Before we can automate this, our first step will be to help you create a durable artifact so the knowledge isn't lost when people move roles.",2,Task,208,,,,,,,,,,,,,
+blarson@vendasta.com,Product,Bryan Larson ,,Advance our AI-assisted design-to-code handoff process,"Improve the quality of AI-generated code that is created by Product Designers so it is readily usable by engineers who are building the required UI as part of their assigned user story. 
+
+This could also mean that more and more designers span their skill set into Cursor and collaborate on the same tool at developers, but focussed on user experience and UI design. ","1. Designer creates static prototypes
+2. Static prototypes are tested and/or reviewed by stakeholders
+3. Static prototypes are linked to user stories in JIRA
+4. Developer uses static prototypes as a reference when developing the front end / UI
+5. Sprint deliverables are reviewed and tested
+6. Iterations are planned as necessary
+7. Development completes iterations","Currently Figma (or similar apps like V0, Lovable etc.) and Cursor",Daily,200,Not required for this submission,5,Workflow,10400,,,,,,,,,,,,,
+blarson@vendasta.com,Product,Bryan Larson,,Standardize AI-assisted concept creation,"Reusable templates are prepared for tools like Figma Make and posibly others (e.g. v0, Lovable, Bolt) that would allow anyone at Vendasta to vibe code concepts that look like the Vendasta platform","The current process varies: either people submit feature requests, link to competitor features, vibe code projects that do not resemble our platform (and sometimes even use them with customers), or if they have the skills they'll create varying fidelities of conceptual prototypes. The goal would be to standardize this so we can create templates and training.","Figma, v0, Lovable, Bolt, Google AI Studio, etc.  Also other tools for feature requests or idea sharing such as chat, email, or Canny",Daily,Difficult to estimate,"Requires a renewed process, templates, and tool selection.",4,System,#VALUE!,,,,,,,,,,,,,
+blarson@vendasta.com,Product,Bryan Larson,,Surface usability insights from behavioural data,"Connect user behaviour data from tools like PostHog, Google Analytics, etc to an AI allowing for new insights to be revealed or questions to be asked to understand platform usage. ","1. Team may implement Posthog tracking into a feature or workflow in the platform
+2. Data is accumulated
+3. Team or stakeholder may review or reference data for insight or to inform decision
+4. Team adapts product to optimize user behavior (I believe this is rare)
+
+We need to define key workflows and obsess around optimizing them","Posthog, Google Analytics, Hotjar (former tool) for quantitative data. NPS, Canny, reviews, feedback forms, and discussions for qualitative data. ",Daily,200,"None / It's in people's heads: This flags a ""knowledge gap."" Before we can automate this, our first step will be to help you create a durable artifact so the knowledge isn't lost when people move roles., I don't believe we have formal documentation on how to assess and draw insight from user behaviour metrics, but some exists and third-party documentation could also be used.",4,System,10400,,,,,,,,,,,,,
+blarson@vendasta.com,Product,Bryan Larson,,Competitor research and keeping up with applicable technology advancements,"An app that automatically reports on recent releases from competing tools and/or technological advancements that pertain to Vendasta. It needs to be configurable so that the user can select the domain (e.g. social marketing), criteria (what to include in the report), frequency (e.g. weekly, monthly) to make it easier to stay up-to-date on advancements and changes in the market. ",Often requires manual research that is duplicated over and over by different people and teams. Storage / archiving is unstructured making it easily outdated or hard to find. The momentum of the market and industry is accelerating so we need tools to help us keep up and aligned on what's happening. ,"LLMs, Google Alerts, search, sharing links, etc.",Weekly,at least a few hours per person,"None / It's in people's heads: This flags a ""knowledge gap."" Before we can automate this, our first step will be to help you create a durable artifact so the knowledge isn't lost when people move roles.",4,Workflow,#VALUE!,,,,,,,,,,,,,
+nlabar@vendasta.com,Product,Naresh LaBar,I am one!,Submit Billing Concern,"Notify management for approval, notify finance for processing, billing adjustment is processed.","A credit/refund request is received by support (from a customer).  Support reviews the concern and if within policy, posts the request for approval in #vcash-credit-approvals space. Once approval is received, the information is copied from the approval and into the billing concern form and is submitted.  Submission creates a ticket with Finance, who finishes processing the request in the billing center.","Zendesk, Google Chat, Google Forms",Daily,2.5,"We have a Framework of SOP:  A written step-by-step guide is the best ""machine-readable"" foundation for an AI employee.",3,Workflow,130,,,,,,,,,,,,,
+cgreenwald@vendasta.com,R&D,Chelsea Greenwald,,Local development microservice testing,Deploy feature branch to a test/dev environment for end-to-end testing,"Local testing is valuable to ensure code changes are delivering expected results before committing them to a production environment. Currently, local test setups for backend microservices are limited, and a significant amount of testing is performed by deploying a feature branch to the demo environment on mission control. Ideally, changes should be fully vetted before deploying to demo or prod on mission control. Local test setups tend to be repo/team-dependent, and are usually limited to the individual service being changed (i.e. we aren't easily set up to run operations in a local business app instance which depends on a local conversation instance which has feature changes). ","IDEs, Mission Control, VStore, Temporal, Firestore",Daily,10,"None / It's in people's heads: This flags a ""knowledge gap."" Before we can automate this, our first step will be to help you create a durable artifact so the knowledge isn't lost when people move roles.",3,Task,520,,,,,,,,,,,,,
+ahenry@vendasta.com,R&D,Alec Henry,,Writing Confluence docs,A Confluence Document,"Confluence has lots of formatting options, which is useful for readability of a document. However, I don't believe we have an AI built into Confluence to help write it, nor do we have a good import workflow to produce something with Gemini or Cursor and import it with formatting into Confluence.",Confluence,Per Transaction,"Could be 5 minutes, could be hours. Depends on how much formatting you want in the doc.",I'm sure confluence has documentation on formatting available,2,Task,#VALUE!,,,,,,,,,,,,,
+hnaidu@vendasta.com,R&D,Hemant Naidu,,Performance assessments (quarterly + annual) Evidence Gathering & Draft Scaffolding,"Performance reviews are a high-value part of the Engineering Manager role, but with ~10–15 direct reports the evidence gathering becomes a major, repetitive time sink and is prone to gaps or bias (recency effects, under/over-weighting big projects). Most of the “what work happened” signals already exist in Jira, Confluence, GitHub, incidents, and PRs. There’s an opportunity for AI automation to continuously collect and summarize objective work artifacts into an up-to-date “impact profile” per engineer (deliverables, ownership, quality signals, collaboration, operational contributions), so EMs can spend review time on judgment, coaching, and growth, not reconstructing history.","Some ICs often have different managers over the course of the year, meaning context is difficult to maintain between managers. To overcome this there are many conversations between two EMs to help maintain consistent context. The EM has to also manually build a historical picture of that IC from disparate systems such as Jira, GitHub, and Confluence.","Jira, GitHub, Confluence",Monthly,This occurs quarterly (goal reviews) and yearly (for performance assessments and requires a heavy amount of time per report.,"None / It's in people's heads: This flags a ""knowledge gap."" Before we can automate this, our first step will be to help you create a durable artifact so the knowledge isn't lost when people move roles.",4,System,#VALUE!,,,,,,,,,,,,,
+vbravo@vendasta.com,Sales,Virginia Bravo,,Overdue billing ads spend subscriptions ,To automatically pause or cancel ads spend RETAIL subscription along with product when billing fails. ,"Current process: When a retail subscription goes past due on their billing for ANY account including the ""MatchCraft Search Ads"" product, it will create a project in VTM (Project template name: Overdue Payment Project) for an agent to go through those tasks daily and pause ads campaign manually in MatchCraft until we collect funds. During that time, the VTM project stays under ""waiting for customer"" and an agent manually checks those pending tasks daily to see if payment has been received to then unpause campaign. ","Task Manager, CRM (Partner Center)",Daily,,"None / It's in people's heads: This flags a ""knowledge gap."" Before we can automate this, our first step will be to help you create a durable artifact so the knowledge isn't lost when people move roles.",3,Workflow,0,,,,,,,,,,,,,
+sbalzasalazar@broadly.com,Sales,Siuly Balza,,TASK / Appointments Confirmations/ Reminders,"The CRM could send an email and SMS 24 hours before the appointment to remind the customer. Then, one hour before the appointment, the system could send another email and SMS to confirm the customer's attendance for the call with the AE/AM.
+
+Our scheduling department will manually attempt to contact the customer 30-45 minutes later, allowing time for them to reply to the email or SMS.
+
+The meeting status should have an additional option: If the customer replies ""1"" to confirm, the status automatically updates to ""CONFIRMED,"" eliminating the need for the scheduling team to call. However, if the customer replies ""2"" to ""RESCHEDULE,"" the appointment status should update to ""NO SHOW,"" prompting our agents to contact the customer immediately to schedule a new appointment.
+
+At the end of the day (5:00 PM / 6:00 PM), all appointments marked as ""NO SHOW"" should receive an email and SMS reminding the customer that the appointment was not completed and inviting them to reply, to get a new appointment scheduled. ","The process is as follows:
+
+1.  **Scheduling:** We use BookMeNow to schedule the appointment, which then syncs to Google Calendar and creates a meeting in the CRM (where we are unable to update the status).
+2.  **Status Update:** We manually create a new meeting to enable status updates.
+3.  **24-Hour Reminder:** The scheduling agent calls the customer using Kixie to remind them of the appointment. If the customer does not answer, a voicemail is left, and an email and SMS are sent through the CRM.
+4.  **1-Hour Confirmation:** One hour prior to the appointment, the scheduling agent calls the customer using Kixie to confirm their attendance. If the customer does not answer, a voicemail is left, and an email and SMS are sent through the CRM.
+5.  **15-Minute Follow-up:** Fifteen minutes before the appointment, the agent attempts to contact the customer again via phone using Kixie.",BookMeNow / Google Calendar/ CRM/ Kixie,Per Transaction,40,"We have a Framework of SOP:  A written step-by-step guide is the best ""machine-readable"" foundation for an AI employee.",5,Workflow,2080,,,,,,,,,,,,,
+phinrichs@broadly.com,Sales,Patty Hinrichs,,Onboarding,"One onboarding to encompass all products/services that allows a more streamlined experience for the client to ensure no items are missed or communications not shared. Currently clients can have 2-4 onboarding calls due to multiple products, leading to missed details and a triangulated experience. ","Meetings are being held but not always recorded or if recorded the meeting information is not available to the team as a whole. Causing the onboarding to be lacking in the information needed for fulfillment of services. 
+
+Context is lost due to this and then the appropriate teams are not in lined to provide the client the best experience possible that leads to retention. 
+
+Instead of one concise location for all account data it is often in multiple places, CRM, VTM, Chats, Google Sheets, etc. leading to missteps in the clients experience. ","VTM, Google Sheets, CRM",Per Transaction,5,"We have a Framework of SOP:  A written step-by-step guide is the best ""machine-readable"" foundation for an AI employee.",5,Workflow,260,,,,,,,,,,,,,
+arjunr@broadly.com,Sales,Arjun Raman,NA,NA,"The desired outcome is to establish a structured, transparent, and well-documented workflow that reduces manual effort and improves visibility across the enterprise process. All interactions with SMBs—including POCs, communication history, and defined job roles—should be accurately captured and easily searchable. The system should clearly distinguish end users from partnership contacts through dedicated views, ensuring cleaner data and more effective filtering. Overall, the workflow should enable better traceability, accountability, and efficiency, allowing teams to access the right information at the right time and make informed decisions with confidence.","Information is primarily captured through meetings, emails, and chat conversations with internal team , SMBs and partners. Team members manually extract key details (POC, requirements, job roles, and outcomes) and copy them into spreadsheets or CRM systems. Updates are often shared verbally or via chat rather than recorded in a central system, causing context to be lost during handoffs. Contact lists are manually downloaded and cleaned to separate end users from partnership contacts. Process knowledge and best practices are not documented and instead rely on individual experience, making the workflow inconsistent, time-consuming, and difficult to scale.","Partner center , Salesforce , email communication ",Daily,all day / 8hrs,"None / It's in people's heads: This flags a ""knowledge gap."" Before we can automate this, our first step will be to help you create a durable artifact so the knowledge isn't lost when people move roles.",5,Workflow,#VALUE!,,,,,,,,,,,,,
+jtomlin@vendasta.com,Sales,Jeff Tomlin,,Update Operational Model,Updating actual monthly results for the operational model is automatic.,Model has multiple input sheets where different types of data live. The sources for each data point are noted with a url link. Steps to pull exact data evolve as we need new filters for things like bookings. This knowledge is often hidden. Not enough time is spent on analysis with the current maintenance overhead.,"Google sheets, multiple data sources (Looker, premium reports)",Monthly,8,We have a spreadsheet template: This provides the structured data format an AI would need to output.,4,Workflow,416,,,,,,,,,,,,,
+bortiz@broadly.com,Sales,Briana Ortiz ,,,Can we automate the opportunity workflow so that all required information must be completed before an AE/SDR/AM  can proceed to the next page?,"When an SDR/AE/AM make an opportunity can we automate that they fill out all required information before proceeding to the next step. We are noticing that important information is missing like the correct pipeline. We also notice when they are filling out the information for the business they are not submitting complete address. That is important for billing purpose. Can we automate it to where they can't move on to the next page until the information is filled out. 
+
+",,Daily,I check this daily.,,1,Task,#VALUE!,,,,,,,,,,,,,
+jleach@vendasta.com,Sales,Jeffrey Leach,N/A,Pilot Setup Automation,Remove the significant amount of time that it takes our Account Execs to create a pilot for a strategic Enterprise prospect. Nearly all of our Enterprise prospects want to try before they buy (committing $100k+ per year),"Steps that the AE goes through when setting up a pilot today""
+
+1) Create a PID
+2) Submit a ""let's make a deal"" to get approval
+3) Submit a billing concern so the products can be discounted for pilot
+4) Activate products for each of the pilot accounts 
+5) Fill out SMS registration form - collection + submission 
+4) Add AI knowledge for each account
+5) Create automations for each account
+6) Test all of the above before bringing partner into the platform","Vendasta Partner Center, Business App, Google Chat",Weekly,15 per AE.  This happens closer to 2-3 times per month,"None / It's in people's heads: This flags a ""knowledge gap."" Before we can automate this, our first step will be to help you create a durable artifact so the knowledge isn't lost when people move roles.",4,Workflow,#VALUE!,,,,,,,,,,,,,
+jleach@vendasta.com,Sales,Jeffrey Leach,N/A,Mutual Plan Creation,"Desired outcome is the creation of a Mutual Plan to share with our prospects during the sales cycle.  Often times, we have our own idea of the decision timeline, opportunity details, decision makers, prospect goals and expectations, and much more.  When we get towards the end of what we feel is the sales cycle, when the prospect is supposed to sign, we then find out that the deal is delayed.  Perhaps we missed a decision maker or weren't aligned on the KPI's. A Mutual Plan solves for that. The document is co-owned with the partner so they are aligned with the outcomes from the beginning.  
+I have started working on a Google Studio App that takes the meeting transcriptions and summaries from our Google Meets and produces the beginning of a mutual plan ""doc"" that can be shared with the prospect immediately. I believe this would be better suited if it was resident in our platform if possible.
+If we do this correctly, it will also train our sales team to ask the right questions during prospect discovery meetings and demos.","1)  Conduct Prospect Discovery Meeting with Recording and Transcription always on
+2)  Automation should take the recording and use the information to fill in key sections of a pre-defined Mutual Plan template
+3)  Mutual plan is automatically sent to the AI for review 
+4)  Salesperson shares Mutual Plan (Google Doc) with key stakeholders of the prospect as well as stakeholders within Vendasta.  ","Vendasta Partner Center, Google Meet, Google Docs",Weekly,5,"None / It's in people's heads: This flags a ""knowledge gap."" Before we can automate this, our first step will be to help you create a durable artifact so the knowledge isn't lost when people move roles.",3,Workflow,260,,,,,,,,,,,,,
+cbresser@vendasta.com,Sales,Catalina Bresser,,EMEA tracker - Reports per month combined,"An automated monthly EMEA performance report that consolidates engineering data, Looker revenue data, and FX rates into a single, reliable view in EUR and USD.
+
+The workflow should:
+
+Automatically calculate MoM and YoY changes at EMEA, partner, and program level. We look at revenue, media spend, adoption of functions, campaigns, products etc. 
+
+Eliminate manual spreadsheets, pivot tables, and error-prone calculations
+
+Provide a dashboard highlighting the biggest changes and variances
+
+The goal is a low-touch, accurate, and repeatable reporting process that improves visibility and frees up team capacity.",,"Google Sheets, Jira, Looker, ",Weekly,2,We have a spreadsheet template: This provides the structured data format an AI would need to output.,2,Workflow,104,,,,,,,,,,,,,
+astark@vendasta.com,Sales,Adam Stark,,"Billing Workflows - Billing review, Audits, Credit submissions, Approvals",Reduce the overall time needed to complete these important tasks to help us better manage our business and increase partner trust in our team. ,"Many moving parts, process and workflows tied to auditing billing, getting approval on credits, submitting credits. We often have to manually coy data and need to use different systems to make sure everything is actioned properly. 
+These manual pieces open up extra areas of risk
+Additional follow-up or context can also be requested in directmessages, inperson or other areas not tied to the original requests.
+This can lead to delays in processing and cause partner frustration.","VMF, Google Forms, Google Sheets, Billing Center",Daily,"Per person 5-10 hours. Many stakeholders involved. Exectutive, finance, billing, different departments for approvals, ","We have a Framework of SOP:  A written step-by-step guide is the best ""machine-readable"" foundation for an AI employee., We have a spreadsheet template: This provides the structured data format an AI would need to output., None / It's in people's heads: This flags a ""knowledge gap."" Before we can automate this, our first step will be to help you create a durable artifact so the knowledge isn't lost when people move roles.",4,System,#VALUE!,,,,,,,,,,,,,
+jyeomans@vendasta.com,Sales,Janessa Yeomans,N/A,Vendasta Services Request Workflow,Centrallized Documentation & Transparent Communication,"Example: https://chat.google.com/room/AAAA9bhhss8/0Ai4EVXRNt0/0Ai4EVXRNt0?cls=10
+
+Situation: 
+- SMB (Broadly) reaches out to their assigned CSM with questions or issues with a Service
+- CSM is able to look at the Notes on the Account in PC, but there is no conversation, there are no updated notes (Just Status), it doesn't show if there is an issue, etc. 
+- CSM reaches out in an internal G Chat channel for update
+- Typically at this point, severally members are then tagged into the issue trying to understand the communication that has occurred and the situation, which causes a significant delay with the SMB
+- Leads to frustration and potential churn 
+
+Note: While this is internal, especially with the G Chat Channel, our Channel Partners probably experience the same issues without the access to the Channel - there is no centrallized log of information for an account in the system
+
+While in a perfect world we would solve this holistically, even just solving internally would be a huge step in reducing time spent on one issue. ","Zendesk, Google Chat, Email, Vendasta CRM ",Daily,,,5,Workflow,0,,,,,,,,,,,,,
+bpetersen@vendasta.com,Sales,Brad Petersen,,Providing weekly revenue forecasts and identifying individual client trends  ,A fully automatic process for the above ,"Currently I use the weekly CCBR report and plug it into two separate Google sheets. I am able to manually identify wk/wk, mth/mth and quarterly individual client variances. This allows me to not only provide forecasts but identify individual client issues that may be actionable.  ",Google Sheets/Excel ,Weekly,2.5,We have a spreadsheet template: This provides the structured data format an AI would need to output.,4,Task,130,,,,,,,,,,,,,
+dkupietz@vendasta.com,Sales,Desiree Kupietz,,Partner Performance/Growth Index + SBR ,"Bring together billing, CRM activity, and product usage, to remove the need for leaders and Account Managers to bounce between Looker, CRM, and the platform just to piece together what’s going on. Instead, AI gives us one clear, trusted view of how a partner is doing including their health (not just a health score), performance, and where they can grow next.","Looker (Billing & Revenue)
+
+Log into Looker to pull: MRR, MoM growth, Churn, Expansion
+Export: CSVs
+Manually paste numbers into slides
+
+CRM (Partner & AM Activity )
+
+Vendasta CRM to check: Actual invoiced billings, Meetings held, Emails sent, Pipeline, Activations, Cancellations, Product adoption , Usage, AI chat activity, Active accounts
+
+
+Manual input for an SBR: proposal, roadmap, pricing, and strategic recommendation
+","Looker, Vendasta platform (premium reports, billing, partner center)  Google, ChatCPGT, Confluence ",Per Transaction,6,"We have a Framework of SOP:  A written step-by-step guide is the best ""machine-readable"" foundation for an AI employee., Template for SBR",5,System,312,,,,,,,,,,,,,
+jfolckemer@vendasta.com,Sales,Jeff Folckemer,NA,"Want to get all Support - linked into CRM - Analyzed, Recommending next steps, Elevating - RED issues - to the appropriate team, Chat me and others - automaticallly",Complete tie in to our Platform,,,Daily,NA,,4,System,#VALUE!,,,,,,,,,,,,,
+lmctavish@vendasta.com,Sales,Landon McTavish,,Go-To-Market strategies and implementation,"Making it as easy and clear as possible how onboarding, implementation and launch is going to go after signing partnership with Vendasta. Creating a simple understanding of what steps and processes look like to obtain desired ROI. ",Manually creating appropriate packages in Partner Center for the partner. Partner failing to login to the platform/marketplace so need to develop excel sheets with products and pricing. Needing to create campaigns manually per PID in order to show them what an effective prospecting and nurturing campaign with these new solutions would look like. Packages in the package builder are not accurate as they state 'Free' for some products in the Enterprise Pilot sub. Creating sheets to showcase what break even and ROI looks like with a predictable growth rate. Having to create custom presentation decks as products and services are changing constantly at a rapid rate. ,"Venasta partner center, google sheets, chat gpt ",Monthly,5,Have some manually built templates but need to copy and adjust per partner and their desired product offering. Can't copy campaign templates from one pid to another. Can't copy packages from one pid to another. ,4,System,260,,,,,,,,,,,,,
+ttrivedi@vendasta.com,Sales,Tanmay Trivedi,,Task - Update Partner Contact/Business Information,"Consistently update Partner Contact and Business information leveraging AI. This workflow will reduce the salesperson's time spent on keeping partner information updated especially when it comes to org changes, no of clients and key stakeholders on the partnership. This can also help us keep a track of changes in the business priorities especially when is business is going under acquisition. ","The current form of gathering such information is usually through emails and LinkedIn or Yesware. this data keep updating regularly and is tough to track. The biggest impact happens if a previous account owner is no longer with Vendasta or a communication is not logged in the CRM. For now, the email communication is solely dependent on BCC rules and if not set properly, the communication is never logged. Meeting recording are a big example of this as well. Having the ability to properly log communication and updates help salespeople keep a track of activities an pipeline as well. ","GMail, LinkedIn, Meeting Recordings, GChat",Weekly,7,"None / It's in people's heads: This flags a ""knowledge gap."" Before we can automate this, our first step will be to help you create a durable artifact so the knowledge isn't lost when people move roles.",5,Workflow,364,,,,,,,,,,,,,
+kniese@vendasta.com,Sales,Ken Niese,N/A,Account Managers submitting minimum usage billing amounts every month.,"To have minimum usage billings occur automatically, rather than requiring AMs to manually submit them every month.","I have limited knowledge of the process, it was described to me in a meeting. The account managers and maybe the CSMs 1) need to remember which of their accounts have manually billed minimum usage and then 2) submit or enter those amounts into a system. If they forget to submt/enter them by the end of the month, they then have to request for finance to back-date submissions that should apply to the prior month.","For remembering which accounts need the manual billing, each AM may have a different process/software. For submitting / entering the amounts, I don't know what tool is used.",Monthly,"Unknown. But in addition to saving hours of work, it will help to capture revenue that may be missed when an AM loses their reminder about an account.",No first-hand knowledge of which of these exist,3,Workflow,#VALUE!,,,,,,,,,,,,,
+tpennycook@vendasta.com,Sales,Tiffany Pennycook,,Contract Provisioning,Automate the charging and provisioning of new Contracts (Channel - VMF),"Order is signed in VMF, kicks off VTM project with tasks...a person has to manually update pricing in the billing system and turn on the new subscription in super admin. Plus some other manual stuff. ","CRM, billing center, Sheets, probably other stuff ",Daily,I don't know. It's also less about the time and more about getting partners access to their new sub. in an automated way. ,"We have a Loom video: This helps us map ""workflow intelligence"" by seeing exactly how a human currently bridges systems.",5,Workflow,#VALUE!,,,,,,,,,,,,,
+tpennycook@vendasta.com,Sales,Tiffany Pennycook,,Forecasting,"AI predictive revenue models to project close likelihood, forecast variance, and enable scenario planning to move away from subjective forecasting.",We aren't really forecasting at all at the moment - but need to build this out for 2026. ,"sheets, Looker, CRM",Weekly,unknown - new process. Past forecasting methods were taking maybe a dozen hours /week.,"We have a spreadsheet template: This provides the structured data format an AI would need to output., None / It's in people's heads: This flags a ""knowledge gap."" Before we can automate this, our first step will be to help you create a durable artifact so the knowledge isn't lost when people move roles.",5,Workflow,#VALUE!,,,,,,,,,,,,,
+jwatson@vendasta.com,Sales,Jordan Watson,N/A - Though a member of my team is enrolled in the new cohort,Updating Operating Model,Translate numbers from varying Looker sources into a format that fits our Operating Model spreadsheet,People are the bridge,"Looker, Google Sheets",Monthly,24,"None / It's in people's heads: This flags a ""knowledge gap."" Before we can automate this, our first step will be to help you create a durable artifact so the knowledge isn't lost when people move roles., There are some pieces documented, but not all",4,Workflow,1248,,,,,,,,,,,,,
+merfan@vendasta.com,Sales,Mohammad Erfan,N/A,Logging SMS / LinkedIn messages into the CRM,LinkedIn messages automatically in the platform. ,"If there was a way to automate that, it would be great. For outbound purposes, I run a lot of LinkedIn based outreaches and as of right now there are no ways to log them in automatically. ",CRM / Google Sheets,Daily,6,,3,Task,312,,,,,,,,,,,,,
+mamudha@vendasta.com,Vendasta Services,Amudha Murugesan,,"Doing a project on AI workflow and processing automation. There is a big list of automation to be done. Few automations / integrations that will help business in all perspectives would be, ""Google Sheets"" integration, or reporting integration into workflow tools. Integration of acquisitions for Vendasta services use. (Eliminate Lifeline Report!) ","Quicker turn around, less cost of quality, increased revenue. ","All teams using multiple Google sheets, heavy manual work still no tangible reports, multiple workflow tools, unintegrated systems. Bring one tool end to end from sales to customer, with inbuilt reporting and analytics features. ","VTM, Zendesk, Google Sheets, Social media platforms",Daily,15,We have a spreadsheet template: This provides the structured data format an AI would need to output.,4,System,780,"Ranking: 1
+",,,,,,,,,,,,
+slohr@vendasta.com,Vendasta Services,Sandy Lohr,,Vendasta Services Process for Services,Comms between teams with projects assigned throughout,Amudha Murugesan will need to work with a team to take from current state to ideal state' see slide 7 for current and slide 9 for ideal: https://docs.google.com/presentation/d/1vyisKBxCSONKU3eX2L7YXQ50yCCcdeyM/edit?slide=id.p4#slide=id.p4,google sheets,Daily,15,"We have a Framework of SOP:  A written step-by-step guide is the best ""machine-readable"" foundation for an AI employee., We have a spreadsheet template: This provides the structured data format an AI would need to output., https://docs.google.com/presentation/d/1vyisKBxCSONKU3eX2L7YXQ50yCCcdeyM/edit?slide=id.p4#slide=id.p4",5,Task,780,same as above,,,,,,,,,,,,
+mbarrera@vendasta.com,Vendasta Services,Mark Barrera,,Claim a listing,"Look up an SMB's Google or Bing listing. Claim or create and gain access to it in order to manage and update. Once access is received, update via native platform and reconcile with our Business Profile. Send updates to internal team and client. Follow up as necessary for claim reasons, IE video, phone, or postcard verification. ","To complete the creation and claiming of business listings, team members must act as manual bridges across multiple platforms. The process begins with the team member logging into their individual email and manually selecting the correct organization and brand group within the Google Business Profile (GBP) dashboard. For existing listings, staff must manually retrieve a 10-digit Group ID to share with clients via email or chat, providing step-by-step instructions for the client to add the agency as a manager. Once access is requested, the team member must manually track and follow up with the client to ensure they complete video, phone, or postcard verification steps. After verification, the team member is responsible for manually copying the updated business information from the GBP dashboard into the Vendasta CRM to ensure both systems of record are synchronized",VTM and CRM (Business Profile),Daily,"Into a detailed activity listing study to determine the time, unable to quote at this juncture.","We have a Framework of SOP:  A written step-by-step guide is the best ""machine-readable"" foundation for an AI employee.",5,Task,#VALUE!,2,,,,,,,,,,,,
+theresaq@yourdigitalagents.com,Vendasta Services,Theresa Quagraine,n/a,Tracking utilization metrics,To track the work each report completed in a day and how long it took to complete each task to ensure each report is working 6.8 hours each day,"Each report fills out a utilization metrics google form, the submissions get submitted to a Google sheet where I can review any notes being made by report to ensure the submissions are accurate and if they missed any days or need a submission edited I would reach out to the spreadsheet owner through a project comment. The submissions also get pulled to a dashboard where we can see the amount of hours worked weekly and monthly but it doesn't consider the amount of days worked so you need to manually check the number of days the report worked. This data then needs to be added in Lattice for our quarterly goals.","Google forms, Google sheets, lookerstudio",Daily,2.5,We have a spreadsheet template: This provides the structured data format an AI would need to output.,3,Task,130,3,,,,,,,,,,,,
