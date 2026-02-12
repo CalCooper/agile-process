@@ -321,7 +321,7 @@ Support Tickets (Email/Voice)
 
 **Alternative 1: Manual Documentation Process with AI Assistance**
 - **Approach:** Support agents use AI tools (like Claude) to draft documentation, then Knowledge Managers review and publish manually
-- **Why rejected:** Still requires manual coordination, doesn't scale to process all resolved tickets, creates bottleneck at Knowledge Manager review stage, doesn't leverage existing ticket data systematically
+- **Why rejected:** Still requires manual coordination, doesn't scale to process all resolved tickets, creates bottleneck at Knowledge Manager review stage, doesn't use existing ticket data systematically
 
 **Alternative 2: Third-Party Documentation Platform**
 - **Approach:** Use vendor solution (like Zendesk Guide, Intercom Articles) that integrates with support tickets
@@ -341,7 +341,7 @@ Support Tickets (Email/Voice)
   - Can be enhanced to real-time later if needed
 
 **Chosen Approach Rationale:**
-The automated daily batch processing with Claude Code + MCP Server provides the best balance of automation, accuracy, and maintainability. It leverages existing ticket data without requiring manual intervention, scales to process all resolved tickets, maintains Docusaurus as the documentation platform, and includes confidence-based routing to ensure quality.
+The automated daily batch processing with Claude Code + MCP Server provides the best balance of automation, accuracy, and maintainability. It uses existing ticket data without requiring manual intervention, scales to process all resolved tickets, maintains Docusaurus as the documentation platform, and includes confidence-based routing to ensure quality.
 
 ## 8. Risks and Dependencies
 
@@ -353,7 +353,7 @@ The automated daily batch processing with Claude Code + MCP Server provides the 
 
 2. **Transcript Quality and Format Inconsistency**
    - **Risk:** Email threads and voice transcripts may vary in format, making extraction unreliable
-   - **Mitigation:** Build robust parsing logic, test with diverse ticket samples, implement fallback to manual review for low-confidence extractions
+   - **Mitigation:** Build reliable parsing logic, test with diverse ticket samples, implement fallback to manual review for low-confidence extractions
 
 3. **PII Sanitization Failures**
    - **Risk:** Customer PII may leak into published documentation
@@ -369,7 +369,7 @@ The automated daily batch processing with Claude Code + MCP Server provides the 
 
 6. **Documentation Duplication**
    - **Risk:** System may create duplicate documentation or fail to recognize existing content
-   - **Mitigation:** Robust semantic search, similarity scoring thresholds, manual review process to catch duplicates
+   - **Mitigation:** Reliable semantic search, similarity scoring thresholds, manual review process to catch duplicates
 
 **Dependencies:**
 
